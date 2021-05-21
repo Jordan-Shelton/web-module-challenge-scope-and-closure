@@ -28,11 +28,16 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
+  -counter 1 has all of  the elements wrapped up in the function so none of the variables can be used outside of it.
   
   2. Which of the two uses a closure? How can you tell?
+  -function 2 uses a closure because it is reaching out to count. I can tell because there is an external variable being referred to from inside of the function.
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better? 
+  -counter one would be better if used in a situation where you needed the outcome of the function to be contained to that function and not accessible anywhere else preventing accidentally changing the values of the variables.
+
+  counter2 would be better in a smaller file where you weren't at risk of changing the values on accident or needed to be able to change the values frequently at different points in the code.
 */
 
 // counter1 code
@@ -63,7 +68,7 @@ NOTE: This will be a callback function for the tasks below
 */
 
 function inning(/*Code Here*/){
-    /*Code Here*/
+  // Code Here
 }
 
 
